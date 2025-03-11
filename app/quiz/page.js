@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from "react";
+import { use, useState } from "react";
+import "./quiz.css"
 
 function Quiz() {
 
@@ -9,6 +10,8 @@ function Quiz() {
     const [ p3, alteraP3 ] = useState(0)
     const [ p4, alteraP4 ] = useState(0)
     const [ total, alteraTotal ] = useState(0)
+
+    const [ selecionado, alteraSelecionado ] = useState(["","","",""])
 
     function calculaTotal(){
         alteraTotal(p1+p2+p3+p4)
@@ -56,10 +59,10 @@ function Quiz() {
 
             <h2>Quanto é dois + 2?</h2>
             <ul>
-                <li onClick={ ()=> alteraP3(1) } >2</li>
-                <li onClick={ ()=> alteraP3(0) } >0</li>
-                <li onClick={ ()=> alteraP3(0) } >aaaaaa</li>
-                <li onClick={ ()=> alteraP3(0) } >sim</li>
+                <li className={selecionado[0]} onClick={ ()=> { alteraP3(1); alteraSelecionado(["selecionado","","",""]) } } >2</li>
+                <li className={selecionado[1]} onClick={ ()=> {alteraP3(0); alteraSelecionado(["","selecionado","",""]) } }>0</li>
+                <li className={selecionado[2]} onClick={ ()=> {alteraP3(0); alteraSelecionado(["","","selecionado",""]) } }>aaaaaa</li>
+                <li className={selecionado[3]} onClick={ ()=> {alteraP3(0); alteraSelecionado(["","","","selecionado"]) } }>sim</li>
             </ul>
 
             <hr/>
