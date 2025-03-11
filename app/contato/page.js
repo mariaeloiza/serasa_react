@@ -23,7 +23,7 @@ export default function Contato() {
 
     return(
         <div>
-            <h1> Páfina de Contato </h1>
+            <h1> Página de Contato </h1>
             <p> Entre em contato conosco </p>
 
             <hr/>
