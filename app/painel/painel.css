@@ -1,0 +1,11 @@
+.erro{
+    color: lightpink;
+    background-color: darkred;
+    padding: 10px;
+}
+
+.certo{
+    color: lightgray;
+    background-color: darkgreen;
+    padding: 10px;
+}
