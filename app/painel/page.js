@@ -61,7 +61,7 @@ function Painel() {
             {
                 mostraAcerto == true ?
                     <div className="certo">
-                        <p>Logado com sucesso!</p>
+                        <p>Usuário logado com sucesso!</p>
                     </div>
                 :
                     <div></div>
