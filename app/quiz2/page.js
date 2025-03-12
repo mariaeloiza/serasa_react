@@ -15,7 +15,16 @@ function Quiz2() {
     const [ mostraP2, alteraMostraP2 ] = useState(false)
 
     function calculaTotal(){
+        let totalAtualizado = 0 
+
         alteraTotal(p1+p2)
+
+        totalAtualizado = p1+p2
+        alteraTotal(totalAtualizado)
+
+        let valorBanco = parseInt(localStorage.getItem("total"))
+        localStorage.setItem( "total", totalAtualizado )
+
     }
 
     return ( 
@@ -23,6 +32,8 @@ function Quiz2() {
 
             <h1>Quiz Conradito</h1>
             <p>Assinale a opção correta!</p>
+
+            <p>Total de pontos de todo mundo: {}</p>
 
             <hr/>
 
