@@ -11,7 +11,7 @@ function Quiz2() {
 
     const [ selecionado, alteraSelecionado ] = useState(["","","",""])
 
-    const [ mostraP1, alteraMostraP1 ] = useState(true)
+    const [ mostraP1, alteraMostraP1 ] = useState(false)
     const [ mostraP2, alteraMostraP2 ] = useState(false)
 
     function calculaTotal(){
@@ -41,18 +41,22 @@ function Quiz2() {
                     </div>
             }
 
-
             <hr/>
 
-            <h2>Qual a melhor letra?</h2>
-            <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) }  /> A </label>
-            <br/>
-            <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> B </label>
-            <br/>
-            <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> C </label>
-            <br/>
-            <label><input name="p2" type="radio" onChange={ ()=> alteraP2(1) } /> X </label>
-            <br/>
+            {
+                mostraP2 == true &&
+                    <div>
+                        <h2>Qual a melhor letra?</h2>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) }  /> A </label>
+                        <br/>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> B </label>
+                        <br/>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> C </label>
+                        <br/>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(1) } /> X </label>
+                        <br/> 
+                    </div>
+            }
 
             <hr/>
 
