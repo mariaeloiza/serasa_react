@@ -11,7 +11,7 @@ function Quiz2() {
 
     const [ selecionado, alteraSelecionado ] = useState(["","","",""])
 
-    const [ mostraP1, alteraMostraP1 ] = useState(false)
+    const [ mostraP1, alteraMostraP1 ] = useState(true)
     const [ mostraP2, alteraMostraP2 ] = useState(false)
 
     function calculaTotal(){
@@ -30,13 +30,13 @@ function Quiz2() {
                 mostraP1 == true &&
                     <div>
                         <h2>Qual a cor do cavalo branco de Napoleãum?</h2>
-                        <label><input name="p1" type="radio" onChange={ ()=> alteraP1(0) } /> Preto </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Preto </label>
                         <br/>
-                        <label><input name="p1" type="radio" onChange={ ()=> alteraP1(0) } /> Azul </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Azul </label>
                         <br/>
-                        <label><input name="p1" type="radio" onChange={ ()=> alteraP1(0) } /> Branco </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Branco </label>
                         <br/>
-                        <label><input name="p1" type="radio" onChange={ ()=> alteraP1(1) } /> Transparente </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(1); alteraMostraP2(true); alteraMostraP1(false)} } /> Transparente </label>
                         <br/>
                     </div>
             }
