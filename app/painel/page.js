@@ -12,12 +12,16 @@ function Painel() {
     const [ mostraAcerto, alteraMostraAcerto ] = useState(false)
 
     function login(){
-        if(usuario == "maria" && senha == "1234" ){
-            alteraMostraAcerto(true)
-            alteraMostraErro(false)
-        }else if (usuario != "maria" || senha != "1234" ){
-            alteraMostraErro(true)
-            alteraMostraAcerto(false)
+        if (usuario == "" || senha == "") {
+            alteraMostraErro(false);
+            alteraMostraAcerto(false);
+            return;
+        }else if (usuario == "maria" && senha == "1234") {
+            alteraMostraAcerto(true);
+            alteraMostraErro(false);
+        }else {
+            alteraMostraErro(true);
+            alteraMostraAcerto(false);
         }
     }
 
