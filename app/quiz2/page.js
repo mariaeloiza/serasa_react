@@ -23,8 +23,8 @@ function Quiz2() {
         alteraTotal(totalAtualizado)
 
         let valorBanco = parseInt(localStorage.getItem("total"))
-        localStorage.setItem( "total", totalAtualizado )
-
+        localStorage.setItem( "total", totalAtualizado + valorBanco )
+        
     }
 
     return ( 
@@ -33,7 +33,7 @@ function Quiz2() {
             <h1>Quiz Conradito</h1>
             <p>Assinale a opção correta!</p>
 
-            <p>Total de pontos de todo mundo: {}</p>
+            <p>Total de pontos de todo mundo: {localStorage.getItem("total")} </p>
 
             <hr/>
 
