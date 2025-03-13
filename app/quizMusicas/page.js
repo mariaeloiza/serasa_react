@@ -52,9 +52,9 @@ function QuizMusicas() {
                 mostraP1 == true &&
                     <div className="pergunta">
                         <h2>De que filme é essa música?</h2>
-                        {/* <audio>
-                            <source src="" type=""></source>
-                        </audio> */}
+                        <audio>
+                            <source src=""></source>
+                        </audio>
                         <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } />  </label>
                         <br/>
                         <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } />  </label>
@@ -147,14 +147,14 @@ function QuizMusicas() {
             {
                 mostraErro == true &&
                     <div className="erro">
-                        <p>Você acertou!!!</p>
+                        <p>Você acertou!!! 😁</p>
                     </div>
             }
 
             {
                 mostraAcerto == true &&
                     <div className="acerto">
-
+                        <p>Você errou!!! 😥</p>
                     </div>
             }
 
