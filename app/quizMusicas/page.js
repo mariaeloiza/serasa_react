@@ -53,15 +53,15 @@ function QuizMusicas() {
                     <div className="pergunta">
                         <h2>De que filme é essa música?</h2>
                         <audio>
-                            <source src=""></source>
+                            <source src="./audios/pinocchio30s.mp3" type="audio/mp3"/>
                         </audio>
-                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } />  </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> O rei leão </label>
                         <br/>
-                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } />  </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Enrolados </label>
                         <br/>
-                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(1); alteraMostraP2(true); alteraMostraP1(false)} } /> </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(1); alteraMostraP2(true); alteraMostraP1(false)} } /> Pinocchio </label>
                         <br/>
-                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } />  </label>
+                        <label><input name="p1" type="radio" onChange={ ()=> {alteraP1(0); alteraMostraP2(true); alteraMostraP1(false)} } /> Moana 2 </label>
                         <br/>
                     </div>
             }
@@ -70,13 +70,13 @@ function QuizMusicas() {
                 mostraP2 == true &&
                     <div className="pergunta">
                         <h2>De que filme é essa música?</h2>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(1); alteraMostraP3(true); alteraMostraP2(false)} }  />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(1); alteraMostraP3(true); alteraMostraP2(false)} }  /> Cinderela </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } /> Branca de neve </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } /> Tarzan </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} } /> Mulan </label>
                         <br/> 
                     </div>
             }
@@ -85,13 +85,13 @@ function QuizMusicas() {
                 mostraP3 == true &&
                     <div className="pergunta">
                         <h2>De que filme é essa música?</h2>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} }  />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} }  /> Walle-e </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} } /> Lucca </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(0); alteraMostraP4(true); alteraMostraP3(false)} } /> Cinderela </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(1); alteraMostraP4(true); alteraMostraP3(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP3(1); alteraMostraP4(true); alteraMostraP3(false)} } /> Enrolados </label>
                         <br/> 
                     </div>
             }
@@ -100,13 +100,13 @@ function QuizMusicas() {
                 mostraP4 == true &&
                     <div className="pergunta">
                         <h2>De que filme é essa música?</h2>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} }  />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} }  /> Up altas aventuras </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(1); alteraMostraP5(true); alteraMostraP4(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(1); alteraMostraP5(true); alteraMostraP4(false)} } /> Frozen </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} } /> Filhos da terra </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP4(0); alteraMostraP5(true); alteraMostraP4(false)} } /> Aladdin </label>
                         <br/> 
                     </div>
             }
@@ -115,13 +115,13 @@ function QuizMusicas() {
                 mostraP5 == true &&
                     <div className="pergunta">
                         <h2>De que filme é essa música?</h2>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} }  />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} }  /> Tarzan </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} } /> Mulan </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(1); alteraMostraP6(true); alteraMostraP5(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(1); alteraMostraP6(true); alteraMostraP5(false)} } /> Aladdin </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP5(0); alteraMostraP6(true); alteraMostraP5(false)} } /> Cinderela </label>
                         <br/> 
                     </div>
             }
@@ -130,13 +130,13 @@ function QuizMusicas() {
                 mostraP6 == true &&
                     <div className="pergunta">
                         <h2>De que filme é essa música?</h2>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) }  />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) }  /> Bela adormecida </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> Lucca </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> Cinderela </label>
                         <br/>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(1) } />  </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(1) } /> Tarzan </label>
                         <br/> 
 
                         <button onClick={ ()=> calculaTotal() }> Finalizar </button>
