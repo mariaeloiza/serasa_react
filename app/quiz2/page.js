@@ -58,7 +58,7 @@ function Quiz2() {
                 mostraP2 == true &&
                     <div>
                         <h2>Qual a melhor letra?</h2>
-                        <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) }  /> A </label>
+                        <label><input name="p2" type="radio" onChange={ ()=> {alteraP2(0); alteraMostraP3(true); alteraMostraP2(false)} }  /> A </label>
                         <br/>
                         <label><input name="p2" type="radio" onChange={ ()=> alteraP2(0) } /> B </label>
                         <br/>
