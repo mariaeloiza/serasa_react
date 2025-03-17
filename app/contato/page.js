@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Menu from "../produtos/components/Menu";
 
 export default function Contato() {
 
@@ -23,6 +24,9 @@ export default function Contato() {
 
     return(
         <div>
+
+            <Menu/>
+
             <h1> Página de Contato </h1>
             <p> Entre em contato conosco </p>
 
